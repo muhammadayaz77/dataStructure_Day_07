@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let data = [1,2,3,4,5,6];
+
+    function reverseData(data,start,end){
+        console.log(data)
+        if(start <= end)
+        {
+            let temp = data[end];
+            data[end] = data[start]
+            data[start] = temp;
+            reverseData(data,start+1,end-1)
+        }
+    }
+    reverseData(data,0,data.length-1);
+</script>
+</html>
